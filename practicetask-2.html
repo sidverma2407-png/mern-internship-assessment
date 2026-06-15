@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Personal Information</title>
+    <style>
+        body{
+            background:#f2f2f2;
+            font-family:Georgia, serif;
+        }
+
+        .container{
+            width:900px;
+            margin:20px auto;
+            background:white;
+            padding:30px;
+            border-radius:10px;
+        }
+
+        fieldset{
+            padding:20px;
+        }
+
+        legend{
+            font-size:24px;
+            font-weight:bold;
+        }
+
+        label{
+            display:block;
+            font-size:18px;
+            margin-top:15px;
+            margin-bottom:8px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        textarea{
+            width:95%;
+            padding:12px;
+            font-size:18px;
+            border:1px solid #ccc;
+            border-radius:5px;
+        }
+
+        textarea{
+            resize:vertical;
+        }
+
+        .gender{
+            margin-top:10px;
+            font-size:18px;
+        }
+
+        .gender input{
+            margin-left:15px;
+        }
+
+        button{
+            margin-top:25px;
+            padding:12px 35px;
+            font-size:18px;
+            border:3px solid black;
+            border-radius:10px;
+            background:white;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <fieldset>
+        <legend>User personal information</legend>
+
+        <label>Enter your full name</label>
+        <input type="text" value="Write your name....">
+
+        <label>Enter your email</label>
+        <input type="email" value="Write your email....">
+
+        <label>Enter your password</label>
+        <input type="password">
+
+        <label>Confirm your password</label>
+        <input type="password">
+
+        <label>Enter your gender</label>
+        <div class="gender">
+            <input type="radio" name="gender" checked> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Others
+        </div>
+
+        <label>Enter your Date of Birth</label>
+        <input type="date" value="2009-06-10">
+
+        <label>Enter your Address:</label>
+        <textarea rows="3">Enter address</textarea>
+
+        <br>
+        <button type="submit">submit</button>
+
+    </fieldset>
+</div>
+
+</body>
+</html>
