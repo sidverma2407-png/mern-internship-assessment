@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse all courses offered by ABC Training Institute — Web Development, Programming Languages, Data Structures, Machine Learning and more." />
+  <title>Courses | ABC Training Institute</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <a class="nav-brand" href="index.html">
+        <img src="images/logo.png" alt="ABC Training Institute Logo" />
+        <span>ABC Training Institute</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html" class="active" aria-current="page">Courses</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="register.html" class="btn-register">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ==================== PAGE HERO ==================== -->
+    <section class="page-hero" aria-label="Courses page banner">
+      <span class="tag" style="background:rgba(255,255,255,.15);color:#bfdbfe;border:1px solid rgba(255,255,255,.25);">&#128218; Our Programs</span>
+      <h1>Explore Our Courses</h1>
+      <p>Hands-on, industry-aligned curricula designed to launch your tech career.</p>
+    </section>
+
+    <!-- ==================== COURSES GRID ==================== -->
+    <section class="section" id="courses" aria-labelledby="courses-heading">
+      <div style="text-align:center; margin-bottom:48px;">
+        <h2 class="section-title" id="courses-heading">All Available Courses</h2>
+        <p class="section-subtitle">Choose from our wide range of programs — online, offline, and hybrid.</p>
+      </div>
+
+      <div class="courses-grid">
+
+        <!-- Card 1: Web Development -->
+        <article class="card course-card" id="web-development">
+          <div class="course-card-icon">&#127760;</div>
+          <h3>Web Development</h3>
+          <p class="desc">Build modern, responsive websites and web applications from scratch using cutting-edge tools.</p>
+          <p style="font-size:0.78rem;font-weight:600;color:var(--text-light);text-transform:uppercase;letter-spacing:.6px;margin-bottom:8px;">Topics Covered</p>
+          <ol>
+            <li>HTML &amp; CSS — Foundations of the web</li>
+            <li>JavaScript — Dynamic interactivity</li>
+            <li>React JS — Component-based UIs</li>
+          </ol>
+          <div class="course-footer">
+            <span class="badge badge-online">Online</span>
+            <a class="course-link" href="register.html">Enroll Now &#8594;</a>
+          </div>
+        </article>
+
+        <!-- Card 2: Programming Languages -->
+        <article class="card course-card" id="programming-languages">
+          <div class="course-card-icon">&#128187;</div>
+          <h3>Programming Languages</h3>
+          <p class="desc">Master the most in-demand programming languages used across software, data, and systems engineering.</p>
+          <p style="font-size:0.78rem;font-weight:600;color:var(--text-light);text-transform:uppercase;letter-spacing:.6px;margin-bottom:8px;">Languages Offered</p>
+          <ul>
+            <li>Python — Data, automation &amp; ML</li>
+            <li>Java — Enterprise &amp; Android</li>
+            <li>C++ — Performance &amp; systems</li>
+            <li>C — Low-level foundations</li>
+          </ul>
+          <div class="course-footer">
+            <span class="badge badge-offline">Offline</span>
+            <a class="course-link" href="register.html">Enroll Now &#8594;</a>
+          </div>
+        </article>
+
+        <!-- Card 3: Data Structures -->
+        <article class="card course-card" id="data-structures">
+          <div class="course-card-icon">&#128202;</div>
+          <h3>Data Structures</h3>
+          <p class="desc">Learn how data is organized and manipulated — essential knowledge for cracking tech interviews.</p>
+          <p style="font-size:0.78rem;font-weight:600;color:var(--text-light);text-transform:uppercase;letter-spacing:.6px;margin-bottom:8px;">Key Modules</p>
+          <ol>
+            <li>Arrays, Linked Lists &amp; Stacks</li>
+            <li>Trees, Graphs &amp; Heaps</li>
+            <li>Sorting &amp; Searching Algorithms</li>
+            <li>Dynamic Programming</li>
+          </ol>
+          <div class="course-footer">
+            <span class="badge badge-hybrid">Hybrid</span>
+            <a class="course-link" href="register.html">Enroll Now &#8594;</a>
+          </div>
+        </article>
+
+        <!-- Card 4: DBMS -->
+        <article class="card course-card" id="dbms">
+          <div class="course-card-icon">&#128200;</div>
+          <h3>Database Management (DBMS)</h3>
+          <p class="desc">Understand relational databases, SQL, normalization, and modern NoSQL solutions.</p>
+          <p style="font-size:0.78rem;font-weight:600;color:var(--text-light);text-transform:uppercase;letter-spacing:.6px;margin-bottom:8px;">Key Modules</p>
+          <ul>
+            <li>SQL Fundamentals &amp; Advanced Queries</li>
+            <li>ER Diagrams &amp; Normalization</li>
+            <li>Transactions &amp; Concurrency Control</li>
+            <li>MongoDB &amp; NoSQL Basics</li>
+          </ul>
+          <div class="course-footer">
+            <span class="badge badge-online">Online</span>
+            <a class="course-link" href="register.html">Enroll Now &#8594;</a>
+          </div>
+        </article>
+
+        <!-- Card 5: Machine Learning -->
+        <article class="card course-card" id="machine-learning">
+          <div class="course-card-icon">&#129302;</div>
+          <h3>Machine Learning</h3>
+          <p class="desc">Step into AI — build predictive models, work with real datasets, and deploy ML pipelines.</p>
+          <p style="font-size:0.78rem;font-weight:600;color:var(--text-light);text-transform:uppercase;letter-spacing:.6px;margin-bottom:8px;">Curriculum Highlights</p>
+          <ol>
+            <li>Python for Data Science</li>
+            <li>Supervised &amp; Unsupervised Learning</li>
+            <li>Neural Networks &amp; Deep Learning</li>
+            <li>Model Evaluation &amp; Deployment</li>
+          </ol>
+          <div class="course-footer">
+            <span class="badge badge-online">Online</span>
+            <a class="course-link" href="register.html">Enroll Now &#8594;</a>
+          </div>
+        </article>
+
+        <!-- Card 6: Additional / Bundle -->
+        <article class="card course-card" id="additional-courses" style="background:linear-gradient(135deg,#eff6ff 0%,#e0f2fe 100%);">
+          <div class="course-card-icon" style="background:#fff;">&#127775;</div>
+          <h3>Additional Courses</h3>
+          <p class="desc">Short-term workshops and certification programs to round out your skillset.</p>
+          <p style="font-size:0.78rem;font-weight:600;color:var(--text-light);text-transform:uppercase;letter-spacing:.6px;margin-bottom:8px;">Workshops Available</p>
+          <ul>
+            <li>Git &amp; GitHub — Version Control</li>
+            <li>Linux &amp; Command Line Basics</li>
+            <li>Cloud Computing Fundamentals</li>
+            <li>Cybersecurity Essentials</li>
+          </ul>
+          <div class="course-footer">
+            <span class="badge badge-hybrid">Hybrid</span>
+            <a class="course-link" href="register.html">Enroll Now &#8594;</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section style="background:linear-gradient(135deg,#1e40af,#0ea5e9);padding:64px 5%;text-align:center;color:#fff;" aria-label="Call to action">
+      <h2 style="font-size:clamp(1.5rem,3vw,2rem);font-weight:800;margin-bottom:12px;">Ready to Begin Your Journey?</h2>
+      <p style="opacity:.85;margin-bottom:28px;font-size:1rem;">Join thousands of students already transforming their careers with ABC Training Institute.</p>
+      <a href="register.html" class="btn btn-primary" style="background:#fff;color:#1e40af;">Register Today &#8594;</a>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <strong>ABC Training Institute</strong>
+        <p>Empowering students with the skills they need to thrive in a technology-driven world. Quality education, expert mentors, real results.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <address>
+          &#128205; 42 Knowledge Park, Tech City<br />
+          &#128222; <a href="tel:+911234567890">+91 12345 67890</a><br />
+          &#128140; <a href="mailto:info@abctraining.in">info@abctraining.in</a><br />
+          &#128336; Mon – Sat &nbsp; 9:00 AM – 6:00 PM
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 ABC Training Institute. All rights reserved. &nbsp;|&nbsp; Designed with &#10084; for learners.</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn   = document.getElementById('hamburger');
+    const links = document.getElementById('navLinks');
+    btn.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+  </script>
+
+</body>
+</html>

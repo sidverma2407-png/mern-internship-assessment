@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Register for a course at ABC Training Institute — fill in your details and take the first step toward your tech career." />
+  <title>Register | ABC Training Institute</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <a class="nav-brand" href="index.html">
+        <img src="images/logo.png" alt="ABC Training Institute Logo" />
+        <span>ABC Training Institute</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="register.html" class="btn-register active" aria-current="page">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ==================== PAGE HERO ==================== -->
+    <section class="page-hero" aria-label="Registration page banner">
+      <span class="tag" style="background:rgba(255,255,255,.15);color:#bfdbfe;border:1px solid rgba(255,255,255,.25);">&#128221; Admissions Open</span>
+      <h1>Student Registration</h1>
+      <p>Fill in your details below and we'll get you started right away.</p>
+    </section>
+
+    <!-- ==================== REGISTER SECTION ==================== -->
+    <section class="section" id="register" aria-labelledby="register-heading">
+      <div class="register-wrapper">
+
+        <!-- Info Panel -->
+        <aside class="card register-info" aria-label="Why register with us">
+          <span class="tag">Why Choose Us?</span>
+          <h2 id="register-heading">Start Your Journey Today</h2>
+          <p>Enroll in one of our industry-aligned courses and take the next step in your tech career with expert mentorship.</p>
+
+          <div class="info-item">
+            <span class="info-icon">&#127891;</span>
+            <div>
+              <strong style="display:block;font-size:0.88rem;margin-bottom:2px;">Certified Programs</strong>
+              <span style="font-size:0.8rem;color:var(--text-light);">Industry-recognized certificates upon completion of each course.</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">&#128101;</span>
+            <div>
+              <strong style="display:block;font-size:0.88rem;margin-bottom:2px;">Expert Trainers</strong>
+              <span style="font-size:0.8rem;color:var(--text-light);">Learn from professionals with 10+ years of real-world experience.</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">&#128640;</span>
+            <div>
+              <strong style="display:block;font-size:0.88rem;margin-bottom:2px;">Placement Support</strong>
+              <span style="font-size:0.8rem;color:var(--text-light);">Dedicated placement cell with 95% placement track record.</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">&#128421;</span>
+            <div>
+              <strong style="display:block;font-size:0.88rem;margin-bottom:2px;">Flexible Learning</strong>
+              <span style="font-size:0.8rem;color:var(--text-light);">Choose from online, offline, or hybrid modes at your convenience.</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">&#128222;</span>
+            <div>
+              <strong style="display:block;font-size:0.88rem;margin-bottom:2px;">24/7 Support</strong>
+              <span style="font-size:0.8rem;color:var(--text-light);">Round-the-clock academic and technical support for all students.</span>
+            </div>
+          </div>
+
+          <!-- Quick contact -->
+          <div style="margin-top:28px;padding:18px;background:var(--primary-light);border-radius:10px;border:1px solid #bfdbfe;">
+            <p style="font-size:0.8rem;color:var(--primary);font-weight:600;margin-bottom:6px;">&#128221; Need Help?</p>
+            <p style="font-size:0.8rem;color:var(--text-mid);">Call us at <strong>+91 12345 67890</strong> or email <strong>info@abctraining.in</strong></p>
+          </div>
+        </aside>
+
+        <!-- Registration Form -->
+        <div class="card form-card">
+          <h2>Registration Form</h2>
+          <p class="sub">Fields marked with <span style="color:#ef4444;">*</span> are required.</p>
+
+          <form action="#" method="post" novalidate id="registrationForm" aria-label="Student registration form">
+
+            <!-- Row 1: Full Name & Email -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Full Name <span class="req">*</span></label>
+                <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  placeholder="e.g. Rishit Sharma"
+                  required
+                  minlength="3"
+                  autocomplete="name"
+                  aria-required="true"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address <span class="req">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                  autocomplete="email"
+                  aria-required="true"
+                />
+              </div>
+            </div>
+
+            <!-- Row 2: Phone & DOB -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number <span class="req">*</span></label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+91 98765 43210"
+                  required
+                  pattern="[0-9+\-\s]{10,15}"
+                  autocomplete="tel"
+                  aria-required="true"
+                  aria-describedby="phone-hint"
+                />
+                <span id="phone-hint" style="font-size:0.72rem;color:var(--text-light);margin-top:4px;display:block;">10-digit mobile number</span>
+              </div>
+              <div class="form-group">
+                <label for="dob">Date of Birth <span class="req">*</span></label>
+                <input
+                  type="date"
+                  id="dob"
+                  name="dob"
+                  required
+                  max="2010-12-31"
+                  aria-required="true"
+                />
+              </div>
+            </div>
+
+            <!-- Course Select -->
+            <div class="form-group">
+              <label for="course">Select Course <span class="req">*</span></label>
+              <select id="course" name="course" required aria-required="true">
+                <option value="" disabled selected>-- Choose a course --</option>
+                <optgroup label="Web Development">
+                  <option value="html-css">HTML &amp; CSS</option>
+                  <option value="javascript">JavaScript</option>
+                  <option value="react-js">React JS</option>
+                </optgroup>
+                <optgroup label="Programming Languages">
+                  <option value="python">Python</option>
+                  <option value="java">Java</option>
+                  <option value="cpp">C++</option>
+                  <option value="c">C Language</option>
+                </optgroup>
+                <optgroup label="Advanced Courses">
+                  <option value="data-structures">Data Structures</option>
+                  <option value="dbms">DBMS</option>
+                  <option value="machine-learning">Machine Learning</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <!-- Gender -->
+            <div class="form-group">
+              <label>Gender <span class="req">*</span></label>
+              <div class="radio-group" role="group" aria-label="Select gender">
+                <label class="radio-label">
+                  <input type="radio" name="gender" value="male" required aria-required="true" /> Male
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="gender" value="female" /> Female
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="gender" value="other" /> Other
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="gender" value="prefer-not" /> Prefer not to say
+                </label>
+              </div>
+            </div>
+
+            <!-- Address -->
+            <div class="form-group">
+              <label for="address">Address <span class="req">*</span></label>
+              <textarea
+                id="address"
+                name="address"
+                placeholder="House No., Street, City, State, PIN"
+                required
+                rows="3"
+                aria-required="true"
+              ></textarea>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+              <label for="message">Message / Additional Info</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Any questions, preferred batch timing, or other details..."
+                rows="3"
+              ></textarea>
+            </div>
+
+            <!-- Submit -->
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary" id="submitBtn">
+                &#128640; Submit Registration
+              </button>
+            </div>
+            <p class="form-note">&#128274; Your information is safe with us and will never be shared with third parties.</p>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <strong>ABC Training Institute</strong>
+        <p>Empowering students with the skills they need to thrive in a technology-driven world. Quality education, expert mentors, real results.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <address>
+          &#128205; 42 Knowledge Park, Tech City<br />
+          &#128222; <a href="tel:+911234567890">+91 12345 67890</a><br />
+          &#128140; <a href="mailto:info@abctraining.in">info@abctraining.in</a><br />
+          &#128336; Mon – Sat &nbsp; 9:00 AM – 6:00 PM
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 ABC Training Institute. All rights reserved. &nbsp;|&nbsp; Designed with &#10084; for learners.</p>
+    </div>
+  </footer>
+
+  <script>
+    /* Hamburger toggle */
+    const btn   = document.getElementById('hamburger');
+    const links = document.getElementById('navLinks');
+    btn.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+
+    /* Simple form success feedback */
+    document.getElementById('registrationForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      if (this.checkValidity()) {
+        const sb = document.getElementById('submitBtn');
+        sb.textContent = '✅ Registered Successfully!';
+        sb.style.background = '#16a34a';
+        sb.disabled = true;
+      } else {
+        this.reportValidity();
+      }
+    });
+  </script>
+
+</body>
+</html>
